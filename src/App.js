@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './App.module.css'
 import {fetachData} from './api/index.js'
 
-import {Cards,Charts,CountryPicker} from './components'
+import {Cards,Chart,CountryPicker} from './components'
  
 class App extends React.Component{
 
@@ -23,7 +23,7 @@ state={
       <div className={styles.container}>
         <Cards data={data}/>
         <CountryPicker/>
-        <Charts/>
+        <Chart/>
       </div>
     )
   }
